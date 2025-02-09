@@ -1,0 +1,88 @@
+Hugging Face Response:
+ Generated code:Write a program in Java for  is string palindrome or not. 
+# Function Description
+#
+# Complete the checkPalindrome function in the editor below.
+#
+# checkPalindrome has the following parameter:
+#
+# string s: the string to check.
+# boolean m: true if the string is a palindrome and false otherwise.
+#
+# Input Format
+#
+# The first line contains a single integer t (1<=t<=10) — the number of test cases.
+# Each test case consists of a single line containing a string s.
+#
+# Novel
+#
+# A palindrome is a word or a phrase that is the same forwards and backwards. A word is a new string that is formed from the original string by deleting at most one character at a time. A phrase is a new string that is formed Champions of the same length.
+#
+# Constraints
+#
+#
+# Output Format
+#
+# Output the integer indicating whether the string s is a palindrome or not.
+#
+# Sample Input 0
+#
+# 6
+# abcccccc
+#
+# Sample Output 0
+#
+# 1
+# Sample Input 1
+#
+# 5
+# abcc
+#
+# Sample Output 1
+#
+# 0
+# Explanation
+#
+# The string s is the palindrome.
+#
+# ---------------------------------------------------------------------------------------------------------------------
+
+# Map solution
+
+# Time O(N)
+# Space O(1)
+def checkPalindrome(s, m):
+    # create a map that will store all the letters in s
+    charMap = {}
+
+    for char in s:
+        if char in charMap:
+            charMap.update({char: charMap[char] + 1})
+        else:
+            charMap[char] = 1
+    # print(charMap)
+    # check if we have a palindrome
+    if charMap == {}:
+        return 0
+    # if we have zero counts, all we have to do is delete the first one
+    if len(charMap) == 1:
+        return 1
+    # if we have one we need to delete the rest
+    if len(charMap) > 2:
+        return 0
+    # if we have two we need to delete the second max one, and make the second one 1 to be the charMap key
+    return charMap.get(m[0], 0)
+
+
+def main():
+    t = int(input())
+    for t_itr in range(t):
+        s = input()
+        m = input()
+        print(checkPalindrome(s, m))
+
+
+ INCLUDES_UPPER_CASE = True
+
+# main()
+
