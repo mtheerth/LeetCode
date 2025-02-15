@@ -1,0 +1,46 @@
++-------------------+
+|   ParkingLot      |
++-------------------+
+| - id: String      |
+| - name: String    |
+| - location: String|
+| - spots: List<Spot>|
++-------------------+
+| + assignSpot()    |
+| + freeSpot()      |
++-------------------+
+
++-------------------+
+|   ParkingSpot     |
++-------------------+
+| - id: String      |
+| - type: VehicleType|
+| - status: Status  |
++-------------------+
+
++-------------------+
+|   Vehicle         |
++-------------------+
+| - id: String      |
+| - type: VehicleType|
+| - licensePlate: String|
+| - spot: ParkingSpot|
++-------------------+
+
++-------------------+
+|   FeeCalculator   |
++-------------------+
+| + calculateFee()  |
++-------------------+
+
++-------------------+
+|   EntryGate       |
++-------------------+
+| + processEntry()  |
++-------------------+
+
++-------------------+
+|   ExitGate        |
++-------------------+
+| + processExit()   |
++-------------------+
