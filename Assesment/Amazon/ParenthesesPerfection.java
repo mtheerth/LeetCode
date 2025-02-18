@@ -45,6 +45,10 @@ public class ParenthesesPerfection {
             maxEfficiencyScore += closeHeap.poll();
             imbalanceClose--;
         }
+        //If its perfect parenthisis and still can be increased score.
+         while (!openHeap.isEmpty() && !closeHeap.isEmpty() && (openHeap.peek() + closeHeap.peek() >0) ) {
+            maxEfficiencyScore += openHeap.poll() + closeHeap.poll();
+        }
 
         return maxEfficiencyScore;
     }
