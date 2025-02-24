@@ -1,7 +1,7 @@
 package practise.Assesment;
 
 public class CalculateMinCost {
-    public static int minCostToRemove(String password, String reference, int[] cost) {
+    public static long minCostToRemove(String password, String reference, int[] cost) {
         // frequency arrays for password and reference
         int[] freqPassword = new int[26];
         int[] freqReference = new int[26];
@@ -13,8 +13,8 @@ public class CalculateMinCost {
             freqReference[ch - 'a']++;
         }
         
-        int minCost = Integer.MAX_VALUE;
-        
+        long minCost = Long.MAX_VALUE;
+        if (password.length() == reference.length()) return 0; // edge case
         // For every character that appears in the reference, check if we need removals.
         // Removing enough copies of one such character will break the subsequence condition.
         for (int i = 0; i < 26; i++) {
@@ -25,7 +25,7 @@ public class CalculateMinCost {
                     // To break the subsequence, we need remaining copies < freqReference[i].
                     // So removals needed = freqPassword[i] - (freqReference[i] - 1)
                     int removalsNeeded = freqPassword[i] - freqReference[i] + 1;
-                    int currentCost = removalsNeeded * cost[i];
+                    long currentCost = removalsNeeded * cost[i];
                     minCost = Math.min(minCost, currentCost);
                 }
             }
