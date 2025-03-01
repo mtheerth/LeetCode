@@ -1,7 +1,7 @@
 // Java program to compute sum of
 // subarray elements
  
-  class GfG {
+  class SubarraySum {
  
       static int subarraySum(int[] arr) {
         int n = arr.length;
