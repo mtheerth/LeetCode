@@ -1,0 +1,18 @@
++------------------+
+|      Task       |
++------------------+
+| - id: String    |
+| - execution: int|
+| - dependencies: List<String> |
++------------------+
+
++--------------------------------+
+|        TaskScheduler          |
++--------------------------------+
+| - tasks: Map<String, Task>     |
+| - completionTimes: Map<String, int> |
++--------------------------------+
+| + addTask(task: Task): void    |
+| + getCompletionTime(id: String): int |
++--------------------------------+
+
