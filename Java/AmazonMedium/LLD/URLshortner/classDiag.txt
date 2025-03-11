@@ -1,0 +1,12 @@
+url-shortener/
+├── src/main/java/com/example/urlshortener/
+│   ├── controller/          # REST APIs
+│   ├── service/             # Business logic
+│   ├── repository/          # Database access
+│   ├── model/               # Entities
+│   ├── dto/                 # Data Transfer Objects
+│   ├── util/                # Utility classes (Base62 encoder, etc.)
+│   ├── UrlShortenerApplication.java
+├── src/main/resources/
+│   ├── application.yml      # Configurations
+
