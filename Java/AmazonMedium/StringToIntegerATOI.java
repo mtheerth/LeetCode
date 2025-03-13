@@ -1,26 +1,31 @@
 class Solution {
     public int myAtoi(String s) {
-        int mod = 1000000007;
-        s = s.trim();
-        boolean isNgative = false;
-        if( s.charAt(0) == '-'){
-            isNgative = true;
-            s = s.substring(1);
+       if (s == null || s.isEmpty()) return 0;
+
+        int i = 0, n = s.length(), sign = 1, result = 0;
+        
+        // Step 1: Ignore leading whitespaces
+        while (i < n && s.charAt(i) == ' ') i++;
+
+        // Step 2: Check for '+' or '-'
+        if (i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')) {
+            sign = (s.charAt(i) == '-') ? -1 : 1;
+            i++;
         }
-        int result = 0;
-        for (int i=0; i< s.length(); i++){
-            if (Character.isDigit(s.charAt(i))){
-                int digit = s.charAt(i) - '0';
-                if (result > Integer.MAX_VALUE / 10 || 
-                (result == Integer.MAX_VALUE / 10  && digit > Integer.MAX_VALUE % 10)) {
-                return isNgative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-            }
-                result = (result *10 + digit) % mod;
-            } else {
-                break;
+
+        // Step 3: Convert digits and check for overflow
+        while (i < n && Character.isDigit(s.charAt(i))) {
+            int digit = s.charAt(i) - '0';
+
+            // Check for overflow before adding digit
+            if (result > (Integer.MAX_VALUE - digit) / 10) {
+                return (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
 
+            result = result * 10 + digit;
+            i++;
         }
-        return result;
+
+        return result * sign;
     }
 }
