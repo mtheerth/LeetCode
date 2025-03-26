@@ -6,4 +6,5 @@ problems: https://algo.monster/liteproblems/1 to https://algo.monster/liteproble
 	https://leetcode.com/problems/longest-substring-without-repeating-characters
 4. Median of Two Sorted Arrays.  LC Hard - https://leetcode.com/problems/median-of-two-sorted-arrays/
 5. Longest Palindromic Substring - LC Medium https://leetcode.com/problems/longest-palindromic-substring
+6.zigzag conversion - LC Medium https://leetcode.com/problems/zigzag-conversion
 
