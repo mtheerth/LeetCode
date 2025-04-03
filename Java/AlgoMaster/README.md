@@ -1,9 +1,9 @@
 problems: https://algo.monster/liteproblems/1 to https://algo.monster/liteproblems/3462
 
-1. Two Sum - https://leetcode.com/problems/two-sum/description/ LC Easy
-2. Add Two Numbers - https://leetcode.com/problems/add-two-numbers/ LC Medium
-3.  Longest Substring Without Repeating Characters - LC Medium
-	https://leetcode.com/problems/longest-substring-without-repeating-characters
+1. Two Sum - [LC Easy](https://leetcode.com/problems/two-sum/description/)
+2. Add Two Numbers - [LC Medium](https://leetcode.com/problems/add-two-numbers/)
+3.  Longest Substring Without Repeating Characters - [LC Medium](
+	https://leetcode.com/problems/longest-substring-without-repeating-characters)
 4. Median of Two Sorted Arrays.  LC Hard - https://leetcode.com/problems/median-of-two-sorted-arrays/
 5. Longest Palindromic Substring - LC Medium https://leetcode.com/problems/longest-palindromic-substring
 6.zigzag conversion - LC Medium https://leetcode.com/problems/zigzag-conversion
