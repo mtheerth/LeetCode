@@ -1,5 +1,7 @@
 Why Is Redis a Distributed Swiss Army Knife [Visit](https://newsletter.systemdesign.one/p/redis-use-cases)
+
 How PayPal Was Able to Support 1 Billion [Visit](https://newsletter.systemdesign.one/p/actor-model)
+
 How Google Ads Was Able to Support 4.77 Billion Users With a SQL Database[Visit](https://newsletter.systemdesign.one/p/cloud-spanner-database)
 How Meta Achieves 99.99999999% Cache Consistency[Visit](https://newsletter.systemdesign.one/p/cache-consistency)
 How WhatsApp Was Able to Support 50 Billion Messages a Day With Only 32 Engineers[Visit](https://newsletter.systemdesign.one/p/whatsapp-engineering)
