@@ -38,7 +38,7 @@ public class ArrayGeneratorService {
         int index = 0;
         
         for (int op = 0; op < m && !maxHeap.isEmpty(); op++) {
-            int[] current = maxHeap.poll();
+            int[] current = maxHeap.peek();
             int val = current[0];
             int i = current[1];
             S[index++] = val;
