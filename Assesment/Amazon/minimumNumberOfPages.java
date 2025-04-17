@@ -53,4 +53,6 @@ public static int getDays(List<Integer> pages, int capacity)
 		}
 		i++;
 }
+	return total;
+}
 		
