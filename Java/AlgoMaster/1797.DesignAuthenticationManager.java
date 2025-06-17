@@ -24,7 +24,7 @@ class AuthenticationManager {
       
         // If the token is still valid (hasn't expired), renew it by updating its expiration time
         if (expirationTime > currentTime) {
-            generate(tokenId, currentTime);
+            generate(tokenId, currentTime + timeToLive);
         }
     }
 
