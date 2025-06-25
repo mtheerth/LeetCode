@@ -1,0 +1,14 @@
+object oriented design in java
+explain each in detail with code snippets
+Chapter 1 OOP Fundamentals
+Chapter 2 Parking Lot System
+Chapter 3 Movie Ticket Booking System
+Chapter 4 Unix File Search System
+Chapter 5 Vending Machine System
+Chapter 6 Elevator System
+Chapter 7 Grocery Store System
+Chapter 8 Tic-Tac-Toe Game
+Chapter 9 Blackjack Game
+Chapter 10 Shipping Locker System
+Chapter 11 Automated Teller Machine (ATM) System
+Chapter 12 Restaurant Management System
